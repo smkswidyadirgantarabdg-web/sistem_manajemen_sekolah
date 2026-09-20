@@ -1,6 +1,6 @@
 window.APP_CONFIG = {
   // Setelah GAS Web App dideploy, masukkan URL /exec di sini.
-  API_URL: "PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE",
+  API_URL: "https://script.google.com/macros/s/AKfycbwez37PJPX--YVldpOfQrpK6ud647HHQIfyipuxinVwfzCnPAwRT3mMHDMKg78uzHgd/exec",
 
   APP_NAME: "Sistem Manajemen Kelas",
   SCHOOL_NAME: "SMK Widya Dirgantara Bandung",
