@@ -27,8 +27,7 @@ nav{display:grid;gap:5px}nav a{color:white;text-decoration:none;padding:12px;bor
 .table-wrap{background:white;border:1px solid var(--line);border-radius:14px;overflow:auto;box-shadow:0 5px 20px rgba(20,70,130,.04)}table{width:100%;border-collapse:collapse;min-width:650px}th,td{padding:12px 14px;border-bottom:1px solid #edf2f8;text-align:left;font-size:13px}th{background:#f4f8ff;color:#345b91;position:sticky;top:0}tr:hover td{background:#fbfdff}
 .loading,.empty,.error{background:white;border:1px solid var(--line);border-radius:14px;padding:30px;text-align:center}.error{color:var(--danger);border-color:#f0caca}.spinner{display:inline-block;width:18px;height:18px;border:3px solid #d8e6fa;border-top-color:var(--blue2);border-radius:50%;vertical-align:middle;margin-right:9px;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 
-.login-page{min-height:100vh;padding:40px 20px;display:grid;place-items:center;background:radial-gradient(circle at top left,#d9ebff,transparent 35%),linear-gradient(135deg,#eaf4ff,#f8fbff)}
-.login-card{width:min(680px,100%);background:rgba(255,255,255,.96);border:1px solid #e0edff;border-radius:30px;padding:42px 48px;box-shadow:0 20px 60px rgba(31,93,160,.13);text-align:center}.login-logo{width:150px;height:150px;object-fit:contain}.login-card h1{color:#143e94;font-size:36px;line-height:1.08;margin:20px 0 12px}.login-subtitle{font-size:18px;line-height:1.55;color:#5477ac;margin:0 auto 28px;max-width:560px}.input-box{display:flex;align-items:center;gap:12px;border:2px solid #cfe1fb;border-radius:16px;padding:0 16px;margin:14px 0;height:66px}.input-icon{font-size:23px}.input-box input{border:0;outline:0;flex:1;font-size:18px;color:var(--text);min-width:0}.eye{border:0;background:transparent;color:#4772af;cursor:pointer}.primary-btn{width:100%;height:64px;border:0;border-radius:15px;background:linear-gradient(90deg,#1776e5,#2378e9);color:white;font-weight:700;font-size:19px;cursor:pointer;margin-top:8px}.form-message{min-height:24px;color:#c93636;padding-top:10px}.login-footer{margin-top:35px;color:#2874d4;font-size:14px;letter-spacing:.5px}
+.login-page{min-height:100vh;padding:28px 18px;display:grid;place-items:center;background:radial-gradient(circle at 10% 10%,rgba(35,123,232,.20),transparent 30%),radial-gradient(circle at 90% 90%,rgba(23,71,158,.16),transparent 32%),linear-gradient(135deg,#edf6ff,#f8fbff);position:relative;overflow:hidden}.login-page:before,.login-page:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.45;pointer-events:none}.login-page:before{width:320px;height:320px;background:#cfe4ff;top:-140px;right:-80px}.login-page:after{width:280px;height:280px;background:#dcecff;bottom:-150px;left:-80px}.login-card{position:relative;z-index:1;width:min(500px,100%);background:rgba(255,255,255,.94);border:1px solid rgba(206,226,250,.95);border-radius:30px;padding:34px 38px 28px;box-shadow:0 28px 80px rgba(31,93,160,.18);text-align:center;backdrop-filter:blur(12px)}.login-brand{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:8px}.login-logo{width:118px;height:118px;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(20,70,150,.16))}.login-badge{display:inline-flex;align-items:center;gap:7px;background:#edf5ff;color:#1c63b9;border:1px solid #d7e8fc;border-radius:999px;padding:7px 12px;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}.login-card h1{color:#143e94;font-size:30px;line-height:1.12;margin:15px 0 8px}.login-subtitle{font-size:14px;line-height:1.55;color:#6480a7;margin:0 auto 22px;max-width:410px}.login-form{text-align:left}.input-label{display:block;font-size:12px;font-weight:700;color:#355b8d;margin:14px 2px 7px}.input-box{display:flex;align-items:center;gap:11px;border:1.5px solid #cfe1fb;border-radius:15px;padding:0 14px;height:58px;background:#fbfdff;transition:.2s}.input-box:focus-within{border-color:#4b91e9;box-shadow:0 0 0 4px rgba(35,123,232,.10);background:#fff}.input-icon{font-size:20px;width:24px;text-align:center}.input-box input{border:0;outline:0;flex:1;font-size:16px;color:var(--text);min-width:0;background:transparent}.eye{border:0;background:transparent;color:#4772af;cursor:pointer;padding:7px;border-radius:8px}.eye:hover{background:#edf5ff}.login-options{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:13px 2px 4px;font-size:12px;color:#6680a4}.remember{display:flex;align-items:center;gap:7px;cursor:pointer}.remember input{accent-color:#237be8}.caps-warning{color:#b46b00;min-height:18px;text-align:right}.primary-btn{width:100%;height:58px;border:0;border-radius:15px;background:linear-gradient(135deg,#17479e,#237be8);color:white;font-weight:800;font-size:16px;letter-spacing:.5px;cursor:pointer;margin-top:8px;box-shadow:0 10px 22px rgba(35,123,232,.24);transition:.2s}.primary-btn:hover{transform:translateY(-1px);box-shadow:0 13px 26px rgba(35,123,232,.28)}.primary-btn:disabled{opacity:.7;cursor:wait;transform:none}.form-message{min-height:22px;color:#c93636;padding-top:10px;text-align:center;font-size:13px}.login-status{display:none;margin-top:12px;padding:10px 12px;border-radius:10px;font-size:12px;text-align:center}.login-status.show{display:block}.login-status.info{background:#edf5ff;color:#2565a9}.login-status.error{background:#fff0f0;color:#b62d2d}.login-footer{margin-top:23px;color:#6a85aa;font-size:11px;letter-spacing:.6px}.login-security{margin-top:10px;color:#91a4bf;font-size:10px}
 
 @media(max-width:1000px){.cards{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.sidebar{position:fixed;left:-285px;z-index:10;transition:left .2s}.sidebar.open{left:0}.menu-btn{display:block}.topbar{padding:0 15px}.content{padding:18px}.cards{grid-template-columns:repeat(2,1fr)}.grid-2{grid-template-columns:1fr}.user-chip{display:none}.login-card{padding:30px 20px}.login-card h1{font-size:28px}.login-logo{width:115px;height:115px}}
@@ -49,7 +48,7 @@ window.APP_LOGO_DATA = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAADVCA
 // ===== config.js =====
 window.APP_CONFIG = {
   // Setelah GAS Web App dideploy, masukkan URL /exec di sini.
-  API_URL: "https://script.google.com/macros/s/AKfycbz2s3OR49g8YPS-VI_l0HD5pcT8QeG33FbJZOOZ8XSud4_1GeHCJeABaFWpYw_S9hxihw/exec",
+  API_URL: "https://script.google.com/macros/s/AKfycbxiChel27DL_nIalmhEcT9Eo7gCU_kPM9iP22f4nJYwECZIQVyZR4A15qGYHqH_pU_Zbg/exec",
 
   APP_NAME: "Sistem Manajemen Kelas",
   SCHOOL_NAME: "SMK Widya Dirgantara Bandung",
@@ -105,41 +104,53 @@ window.API = (() => {
 // ===== auth.js =====
 window.Auth = (() => {
   const KEY = "smk_session";
+  const REMEMBER_KEY = "smk_remember";
 
   function getSession() {
-    try { return JSON.parse(sessionStorage.getItem(KEY) || "null"); }
-    catch (_) { return null; }
+    try {
+      const raw = localStorage.getItem(KEY) || sessionStorage.getItem(KEY) || "null";
+      return JSON.parse(raw);
+    } catch (_) { return null; }
   }
 
-  function getToken() {
-    return getSession()?.token || "";
-  }
+  function getToken() { return getSession()?.token || ""; }
 
-  function setSession(session) {
-    sessionStorage.setItem(KEY, JSON.stringify(session));
+  function setSession(session, remember = false) {
+    const target = remember ? localStorage : sessionStorage;
+    const other = remember ? sessionStorage : localStorage;
+    other.removeItem(KEY);
+    target.setItem(KEY, JSON.stringify(session));
+    localStorage.setItem(REMEMBER_KEY, remember ? "1" : "0");
   }
 
   function clear() {
+    localStorage.removeItem(KEY);
     sessionStorage.removeItem(KEY);
   }
 
-  async function login(username, password) {
+  function remembered() { return localStorage.getItem(REMEMBER_KEY) === "1"; }
+
+  async function login(username, password, remember = false) {
     const data = await API.request("auth.login", { username, password });
-    setSession(data);
+    setSession(data, remember);
     return data;
   }
 
-  function logout() {
+  async function logout() {
+    const token = getToken();
+    try {
+      if (token && APP_CONFIG.API_URL && !APP_CONFIG.API_URL.includes("PASTE_")) {
+        await API.request("auth.logout", {});
+      }
+    } catch (_) {}
     clear();
-    history.replaceState(null, "", "#login");
-    Router?.renderLogin?.();
+    location.hash = "#login";
+    location.reload();
   }
 
-  function isLoggedIn() {
-    return !!getToken();
-  }
+  function isLoggedIn() { return !!getToken(); }
 
-  return { getSession, getToken, setSession, login, logout, isLoggedIn };
+  return { getSession, getToken, setSession, login, logout, isLoggedIn, remembered };
 })();
 
 
@@ -158,43 +169,17 @@ window.Router = (() => {
   };
 
   function current() {
-    const hash = (location.hash || "").replace(/^#/, "");
-    return (hash.split("?")[0] || "login").trim().toLowerCase();
-  }
-
-  function isLoginRoute(route) {
-    return !route || route === "login";
+    return (location.hash || "#dashboard").replace("#", "").split("?")[0] || "dashboard";
   }
 
   async function go(route) {
-    route = String(route || current()).toLowerCase();
-
-    // LOGIN SELALU MENJADI HALAMAN PERTAMA UNTUK USER YANG BELUM LOGIN.
-    if (isLoginRoute(route)) {
-      if (Auth.isLoggedIn()) {
-        if (location.hash !== "#dashboard") location.hash = "#dashboard";
-        else await go("dashboard");
-        return;
-      }
-      renderLogin();
-      return;
-    }
-
-    // Semua halaman aplikasi wajib melewati autentikasi.
     if (!Auth.isLoggedIn()) {
       renderLogin();
-      if (location.hash !== "#login") history.replaceState(null, "", "#login");
       return;
     }
-
     const fn = routes[route] || routes.dashboard;
-    try {
-      await fn();
-      setActive(route);
-    } catch (err) {
-      console.error("Router error:", err);
-      shell(`<div class="error"><strong>Terjadi kesalahan.</strong><br>${UI.escape(err?.message || "Gagal memuat halaman.")}</div>`);
-    }
+    await fn();
+    setActive(route);
   }
 
   function setActive(route) {
@@ -204,68 +189,81 @@ window.Router = (() => {
   }
 
   function renderLogin() {
-    // Jangan menghapus elemen <body>; cukup ganti isinya agar event/startup tetap stabil.
     document.body.innerHTML = `
-      <main class="login-page" id="loginPage">
-        <section class="login-card">
-          <img class="login-logo" src="${APP_CONFIG.LOGO}" alt="Logo SMK Widya Dirgantara">
+      <main class="login-page">
+        <section class="login-card" aria-label="Login Sistem Manajemen Kelas">
+          <div class="login-brand"><img class="login-logo" src="${APP_CONFIG.LOGO}" alt="Logo SMK Widya Dirgantara"></div>
+          <div class="login-badge">● Portal Sekolah</div>
           <h1>SISTEM MANAJEMEN<br>KELAS</h1>
-          <p class="login-subtitle">Masuk ke akun Anda untuk mengelola administrasi dan kegiatan kelas.</p>
-          <form id="loginForm" autocomplete="on">
+          <p class="login-subtitle">Silakan masuk menggunakan akun yang telah terdaftar untuk mengakses sistem.</p>
+          <form id="loginForm" class="login-form" autocomplete="on">
+            <label class="input-label" for="username">Username</label>
             <label class="input-box">
               <span class="input-icon">👤</span>
-              <input id="username" name="username" autocomplete="username" placeholder="Username" required autofocus>
+              <input id="username" name="username" autocomplete="username" placeholder="Masukkan username" autocapitalize="none" required>
             </label>
+            <label class="input-label" for="password">Password</label>
             <label class="input-box">
               <span class="input-icon">🔒</span>
-              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password" required>
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Masukkan password" required>
               <button type="button" class="eye" id="togglePassword" aria-label="Tampilkan password">◉</button>
             </label>
-            <button class="primary-btn" id="loginBtn" type="submit">MASUK</button>
-            <div id="loginMessage" class="form-message" role="alert"></div>
+            <div class="login-options">
+              <label class="remember"><input id="rememberMe" type="checkbox"> <span>Ingat saya</span></label>
+              <span id="capsWarning" class="caps-warning"></span>
+            </div>
+            <button class="primary-btn" id="loginButton" type="submit"><span id="loginButtonText">MASUK KE SISTEM</span></button>
+            <div id="loginStatus" class="login-status"></div>
+            <div id="loginMessage" class="form-message"></div>
           </form>
-          <div class="login-footer">SMK WIDYA DIRGANTARA • BANDUNG</div>
+          <div class="login-footer">${APP_CONFIG.SCHOOL_NAME.toUpperCase()}</div>
+          <div class="login-security">Akses aman • Sesi login dikelola oleh server</div>
         </section>
       </main>`;
 
     const form = document.getElementById("loginForm");
     const username = document.getElementById("username");
     const password = document.getElementById("password");
+    const remember = document.getElementById("rememberMe");
+    const button = document.getElementById("loginButton");
+    const buttonText = document.getElementById("loginButtonText");
     const msg = document.getElementById("loginMessage");
-    const btn = document.getElementById("loginBtn");
+    const status = document.getElementById("loginStatus");
+    const caps = document.getElementById("capsWarning");
+    remember.checked = Auth.remembered();
 
     document.getElementById("togglePassword").onclick = () => {
       password.type = password.type === "password" ? "text" : "password";
-      password.focus();
+      document.getElementById("togglePassword").textContent = password.type === "password" ? "◉" : "◌";
     };
+
+    function checkCaps(e) {
+      caps.textContent = e.getModifierState && e.getModifierState("CapsLock") ? "Caps Lock aktif" : "";
+    }
+    password.addEventListener("keydown", checkCaps);
+    password.addEventListener("keyup", checkCaps);
 
     form.onsubmit = async (e) => {
       e.preventDefault();
-      if (btn.disabled) return;
-
       msg.textContent = "";
-      btn.disabled = true;
-      btn.textContent = "MEMPROSES...";
-
+      status.className = "login-status show info";
+      status.textContent = "Menghubungkan ke server...";
+      button.disabled = true;
+      buttonText.textContent = "MEMERIKSA AKUN...";
       try {
-        const data = await Auth.login(username.value.trim(), password.value);
-        if (!data || !data.token) throw new Error("Login berhasil tetapi sesi tidak diterima dari server.");
-
-        // Tidak perlu reload halaman. Pindah route secara langsung agar login tidak hilang.
+        await Auth.login(username.value.trim(), password.value, remember.checked);
+        status.textContent = "Login berhasil. Membuka sistem...";
         location.hash = "#dashboard";
-        await go("dashboard");
+        setTimeout(() => location.reload(), 150);
       } catch (err) {
-        console.error("Login error:", err);
-        msg.textContent = err?.message || "Username atau password tidak valid.";
+        status.className = "login-status show error";
+        status.textContent = "Login gagal";
+        msg.textContent = err.message || "Username atau password salah.";
+        button.disabled = false;
+        buttonText.textContent = "MASUK KE SISTEM";
         password.focus();
-      } finally {
-        btn.disabled = false;
-        btn.textContent = "MASUK";
       }
     };
-
-    // Pastikan fokus tetap berada di form login setelah render.
-    setTimeout(() => username?.focus(), 50);
   }
 
   function shell(content = "") {
@@ -304,16 +302,14 @@ window.Router = (() => {
         </main>
       </div>`;
 
-    document.getElementById("logoutBtn").onclick = () => {
-      Auth.logout();
-    };
-    document.getElementById("menuBtn").onclick = () => document.querySelector(".sidebar")?.classList.toggle("open");
+    document.getElementById("logoutBtn").onclick = () => Auth.logout();
+    document.getElementById("menuBtn").onclick = () => document.querySelector(".sidebar").classList.toggle("open");
     document.querySelectorAll("[data-route]").forEach(a => a.onclick = () => {
       document.querySelector(".sidebar")?.classList.remove("open");
     });
   }
 
-  return { current, go, shell, renderLogin };
+  return { current, go, shell };
 })();
 
 
@@ -466,25 +462,12 @@ Modules.laporan = async function() {
 
 // ===== app.js =====
 document.addEventListener("DOMContentLoaded", async () => {
-  let rendering = false;
-
   const render = async () => {
-    if (rendering) return;
-    rendering = true;
-    try {
-      const route = Router.current();
-      if (!Auth.isLoggedIn()) {
-        if (route !== "login") history.replaceState(null, "", "#login");
-        Router.renderLogin();
-        return;
-      }
-      await Router.go(route === "login" ? "dashboard" : route);
-    } catch (err) {
-      console.error("Startup error:", err);
-      if (!Auth.isLoggedIn()) Router.renderLogin();
-    } finally {
-      rendering = false;
+    if (!Auth.isLoggedIn()) {
+      Router.go("login");
+      return;
     }
+    await Router.go(Router.current());
   };
 
   window.addEventListener("hashchange", render);
